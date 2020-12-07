@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+        <item
+            app:showAsAction="always"
+            android:id="@+id/first"
+            android:icon="@drawable/saat"
+            android:title="First Menu" />
+        <item
+            app:showAsAction="always"
+            android:id="@+id/second"
+            android:icon="@drawable/saat"
+            android:title="Second Menu" />
+        <item
+            app:showAsAction="always"
+            android:id="@+id/third"
+            android:icon="@drawable/saat"
+            android:title="Third Menu" />
+
+</menu>
