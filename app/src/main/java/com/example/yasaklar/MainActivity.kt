@@ -4,6 +4,9 @@
 import android.os.*
 import android.util.Log
 import android.view.LayoutInflater
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Toolbar
@@ -11,9 +14,10 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.navigation.Navigation
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.toolsbar.*
+import kotlinx.android.synthetic.main.toolsbar.view.*
 
 
-class MainActivity : AppCompatActivity() {
+ class MainActivity : AppCompatActivity() {
     var ActionBarDrawerToggle: ActionBarDrawerToggle? = null
 
 
@@ -38,19 +42,21 @@ class MainActivity : AppCompatActivity() {
         BottomClick()
 
 
+
+
+
+
     }
 
-
-
-
     fun ActionBarSettings() {
-
 
         toolbar = toolbar
         toogle = ActionBarDrawerToggle(this, DrawerLayout, toolsBar, R.string.open, R.string.close)
         toogle!!.syncState()
 
     }
+
+
 
     fun BottomClick () {
 
@@ -81,14 +87,6 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    override fun onPause() {
-        super.onPause()
-
-        Log.i("deneme10", "klannanana")
-
-        supportFragmentManager.beginTransaction().replace(R.id.hostFragment, DrawerLayout())
-            .commit()
-    }
 
 
 
